@@ -1,12 +1,14 @@
 This plugin requires the Windows 7+ SDK.
 
-Provides and actor <code>SAPI Actor</code> which receives speech recognition events
+Provides an actor <code>SAPI Actor</code> which receives speech recognition events
 
     void OnSpeechInputStarted();
 
     void OnSpeechInputStopped();
  
-    void OnSpeechRecognized(const FString &SpeechText); // JSON formatted SRGS output
+JSON formatted SRGS SML output. You can parse it with [VaRest](https://github.com/ufna/VaRest)
+
+    void OnSpeechRecognized(const FString &SpeechText); 
  
     void OnSpeechRecognitionError(const FString &ErrorMessage, 
                                   const FString &Source, 
