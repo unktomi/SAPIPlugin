@@ -8,7 +8,7 @@ Provides an actor <code>SAPI Actor</code> which receives speech recognition even
  
 JSON formatted SRGS SML output. You can parse it with [VaRest](https://github.com/ufna/VaRest)
 
-    void OnSpeechRecognized(const FString &SpeechText); 
+    void OnSpeechRecognized(const FString &SpeechText); // JSON formatted SRGS output
  
     void OnSpeechRecognitionError(const FString &ErrorMessage, 
                                   const FString &Source, 
