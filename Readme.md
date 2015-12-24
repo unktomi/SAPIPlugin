@@ -64,5 +64,7 @@ Dynamically assign the specified grammar rule:
 Manually send audio to the recognizer:
 
     void SendAudio(const TArray<uint8> &Samples, int32 Channels, int32 SamplesPerSecond);
+    
+Note that you must call SetLanguage and SetGrammar before you will receive any events.
 
 
