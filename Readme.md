@@ -1,6 +1,6 @@
 This plugin requires the Windows 7+ SDK.
 
-Provides an actor <code>SAPI Actor</code> which receives speech recognition events
+Provides a Blueprint actor <code>SAPIActor</code> which receives speech recognition events:
 
     void OnSpeechInputStarted();
 
@@ -8,7 +8,7 @@ Provides an actor <code>SAPI Actor</code> which receives speech recognition even
  
 JSON formatted SRGS SML output. You can parse it with [VaRest](https://github.com/ufna/VaRest)
 
-    void OnSpeechRecognized(const FString &SpeechText); // JSON formatted SRGS output
+    void OnSpeechRecognized(const FString &SpeechText); // JSON formatted SRGS SML output
  
     void OnSpeechRecognitionError(const FString &ErrorMessage, 
                                   const FString &Source, 
@@ -17,7 +17,7 @@ JSON formatted SRGS SML output. You can parse it with [VaRest](https://github.co
 
 Also provides a modal latent action which waits for a response from the user that matches the current grammar:  
 
-    void GetResponse(FString &ResponseText) // JSON formatted SRGS output
+    void GetResponse(FString &ResponseText) // JSON formatted SRGS SML output
 
 
 Provides the following library functions to manage the recognizer including SRGS grammars
