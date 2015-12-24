@@ -44,7 +44,7 @@ Enable or disable the specified grammar (file must be relative to the root of yo
 
 Enable or disable the specified grammar rule, e.g "Grammars/MyGrammar.grxml#Rule1":
 
-    SetRule(const FString &RuleUrl, bool Enabled);
+    void SetRule(const FString &RuleUrl, bool Enabled);
     
 Used in conjunction with GetResponse. Temporarily disables current grammars and enables the specified grammar:
 
