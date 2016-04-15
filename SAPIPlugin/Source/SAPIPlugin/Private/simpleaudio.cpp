@@ -75,3 +75,4 @@ STDAPI DllUnregisterServer(void)
 }
 
 
+#include "HideWindowsPlatformTypes.h"

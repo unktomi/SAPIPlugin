@@ -1393,3 +1393,5 @@ STDMETHODIMP SpAudioPlug::SetBufferNotifySize(ULONG cbSize)
 
 	return hr;
 }
+
+#include "HideWindowsPlatformTypes.h"

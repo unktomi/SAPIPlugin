@@ -854,3 +854,4 @@ void FSAPIPlugin::AddWordTransition(const FString &RuleUrl, const TArray<FString
 
 
 
+#include "HideWindowsPlatformTypes.h"
